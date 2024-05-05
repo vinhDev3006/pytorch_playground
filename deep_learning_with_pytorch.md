@@ -245,7 +245,7 @@ print(b, w)
 ### Recap 2: Creating **tensor** in PyTorch, sending them to a **device**, and making **parameters** out of them
 
 Tensors are just higher-dimensional matrics.
-![tensor](image.png)
+![tensor](md_images\image.png)
 
 ```python
 # define device
@@ -309,9 +309,9 @@ for epoch in range(n_epochs):
 ### Recap 4: Visualizing the **dynamic computation graph** associated with a sequence of operation
 We can use make_dot(yhat) to plot the graph
 
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](md_images\image-1.png)
+![alt text](md_images\image-2.png)
+![alt text](md_images\image-3.png)
 
 
 ### Recap 5: Creating an **optimizer** to simultaneously update multiple parameters, using its step() and zero_grad() methods
@@ -376,7 +376,7 @@ for epoch in range(n_epochs):
 
 For **straightforward models** that use **a series of built-in PyTorch models**, such as Linear, where the output of one is sequentially fed as an input to the nex, we can use a **Sequential** model
 
-![alt text](image-4.png)
+![alt text](md_images\image-4.png)
 
 ```python
 model = nn.Sequential(
@@ -1067,7 +1067,7 @@ OrderedDict([('0.weight', tensor([[1.9414]], device='cuda:0')), ('0.bias', tenso
 ```python
 fig = sbs.plot_losses()
 ```
-![alt text](image-5.png)
+![alt text](md_images\image-5.png)
 
 - Make Prediction
 ```python
@@ -1101,7 +1101,7 @@ new_sbs.load_checkpoint('model_checkpoint.pth')
 new_sbs.set_loaders(train_loader, val_loader)
 new_sbs.train(n_epochs=50)
 ```
-![alt text](image-6.png)
+![alt text](md_images\image-6.png)
 
 <hr style="border:2px solid blue">
 
@@ -1140,27 +1140,27 @@ new_sbs.train(n_epochs=50)
 | Red | 0 | Negative |
 | Blue | 1 | Positive |
 
-![alt text](image-8.png)
+![alt text](md_images\image-8.png)
 
-![alt text](image-9.png)
+![alt text](md_images\image-9.png)
 
-![alt text](image-10.png)
+![alt text](md_images\image-10.png)
 
-![alt text](image-11.png)
+![alt text](md_images\image-11.png)
 
-![alt text](image-12.png)
+![alt text](md_images\image-12.png)
 
-![alt text](image-13.png)
+![alt text](md_images\image-13.png)
 
-![alt text](image-15.png)
+![alt text](md_images\image-15.png)
 
-![alt text](image-14.png)
+![alt text](md_images\image-14.png)
 
-![alt text](image-16.png)
+![alt text](md_images\image-16.png)
 
-![alt text](image-17.png)
+![alt text](md_images\image-17.png)
 
-![alt text](image-18.png)
+![alt text](md_images\image-18.png)
 
 ### Recap 2: Generating and preparing a toy dataset using Scikit-Learn's **make_moons()**
 ```python
@@ -1183,7 +1183,7 @@ sc.fit(X_train)
 X_train = sc.transform(X_train)
 X_val = sc.transform(X_val)
 ```
-![alt text](image-7.png)
+![alt text](md_images\image-7.png)
 ***
 # Computer Vision
 
@@ -1264,7 +1264,7 @@ plt.title('Solar radition time series')
 plt.show()
 ```
 
-![alt text](image-19.png)
+![alt text](md_images\image-19.png)
 
 ### Recap 3: **Resampling** a time series
 
@@ -1289,7 +1289,7 @@ plt.xlabel('')
 plt.title('Daily total solar radiation')
 plt.show()
 ```
-![alt text](image-21.png)
+![alt text](md_images\image-21.png)
 
 ### Recap 4: **Dealing** with missing value
 
@@ -1330,7 +1330,7 @@ ax3.set_title('Series with bfill imputation')
 
 plt.tight_layout()
 ```
-![alt text](image-22.png)
+![alt text](md_images\image-22.png)
 
 ### Recap 5: **Decomposing** a time series
 Time series decomposition is the process of spliting a time series into its basic components, such as trend or seasonality
